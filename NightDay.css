@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(230,194,106);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 2px #353535;
+}
+
+#day {
+  color: rgb(238,238,238);
+  font-size: 180px;
+  font-weight: 500;
+}
+
+#calendar {
+  color: rgb(238,238,238);
+  font-size: 80px;
+}
+
+#clock {
+  color: rgb(238,238,238);
+  font-size: 150px;
+}
+
+
+#orb {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+#sunMoonEffect {
+  margin: 30px 30px 0 30px;
+  padding: 50px;
+}
+
+.night {
+    background-color: rgb(35,50,65);
+}
+
+.day {
+    background-color: rgb(55,210,230);
+}
+
+.sun {
+  background-color: rgb(255,230,94);
+  border: 20px solid rgb(240,195,15);
+}
+
+.moon {
+  background-color: rgb(190,195,200);
+  border: 10px solid #eaeff2;
+  padding: 10px;
+}
+
+.visible {
+    background-color: #eaeff2;
+}
+
+#sunHalo {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin: auto;
+    border: 20px solid rgb(240,195,15);
+}
+
+#moonspot1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    float:right;
+    margin: 10px 50px 20px 20px;
+}
+
+#moonspot2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    float:right;
+    margin: 45px 15px 20px 20px;
+}
+
+#moonspot3 {
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+    float:right;
+    margin: 0px 45px 0 0;
+}
