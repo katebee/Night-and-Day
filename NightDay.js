@@ -74,7 +74,7 @@ var Clock = (function () {
        clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
    };
    var sunMoonEffect = function () {
-       if (hours >= 20 || hours <= 8 ) {
+       if (hours >= 8 || hours <= 20 ) {
          $('#orb').removeClass('moon').addClass('sun');
          $('#sunMoonEffect').removeClass('night').addClass('day');
          $('.sunHalo').addClass('visible');
