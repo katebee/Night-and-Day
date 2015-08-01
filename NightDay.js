@@ -74,18 +74,27 @@ var Clock = (function () {
        clockDiv.innerText = hours + ":" + minutes + ":" + seconds;
    };
    var sunMoonEffect = function () {
-       if (hours >= 8 || hours <= 20 ) {
-         $('#orb').removeClass('moon').addClass('sun');
-         $('#sunMoonEffect').removeClass('night').addClass('day');
-         $('.sunHalo').addClass('visible');
-         console.log("Day time!");
-       }
-       else {
-         $('#orb').removeClass('sun').addClass('moon');
-         $('#sunMoonEffect').removeClass('day').addClass('night');
-         $('.moonspot').addClass('visible');
-         console.log("Night time!");
-       }
+       if (hours < 6 || hours > 22) {
+           $('#orb').removeClass('sun').addClass('moon moon-glow');
+           $('#sunMoonEffect').removeClass('day').addClass('night');
+           $('.moonspot').addClass('visible');
+        }
+        else if (hours < 8) {
+           $('#orb').removeClass('moon').addClass('sun sun-glow');
+           $('#sunMoonEffect').removeClass('night').addClass('dawn');
+           $('.moonspot').removeClass('visible');
+        }
+        else if (hours < 18) {
+           $('#orb').removeClass('moon').addClass('sun sun-glow');
+           $('#sunMoonEffect').removeClass('night').addClass('day');
+           $('.moonspot').removeClass('visible');
+        }
+        else if (hours < 20) {
+           $('#orb').removeClass('moon').addClass('sun sun-glow');
+           $('#sunMoonEffect').removeClass('day').addClass('dusk');
+           $('.moonspot').removeClass('visible');
+        }
+
    };
    return {
        //public methods
@@ -107,4 +116,11 @@ $(document).ready(function () {
 
     Clock.sunMoonEffect();
     setInterval(Clock.sunMoonEffect, 1000);
+
+    $('#orb').click();
+
+    $(window).resize(function() {
+      var windowWidth = $(window).innerWidth();
+      console.log("window width is: " + windowWidth);
+    });
 });
