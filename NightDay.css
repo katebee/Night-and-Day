@@ -3,9 +3,8 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   text-shadow: 2px 2px 2px #353535;
+  overflow-x: hidden;
 }
-
-
 
 #day {
   color: rgb(238,238,238);
@@ -13,8 +12,6 @@ body {
   font-weight: 500;
   padding: 10px;
 }
-
-
 
 #calendar {
   color: rgb(238,238,238);
@@ -35,7 +32,7 @@ body {
 }
 
 #sunMoonEffect {
-  margin: -10px -10px 0px -10px;
+  margin: -8px -10px 0px -8px;
   padding: 60px 0 60px 0;
 }
 
@@ -57,7 +54,7 @@ body {
 
 .dusk {
     background-color: rgb(55,210,230);
-    background: linear-gradient(0deg, rgb(113, 87, 71), rgb(55,210,230));
+    background: linear-gradient(0deg, rgb(225,106,74), rgb(225,144,74), rgb(55,210,230));
     transition:background-color 0.5s ease;
 }
 
@@ -101,7 +98,7 @@ body {
     margin: 0% 15% 0% 0%;
 }
 
-/* SHADOW/GLOW TRANSITIONS
+/* SHADOW/GLOW TRANSITIONS AND HOVER BOB
 CREDIT TO: https://github.com/IanLunn/Hover/blob/master/css/hover.css */
 .sun-glow {
   display: inline-block;
