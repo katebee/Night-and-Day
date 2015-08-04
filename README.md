@@ -1,5 +1,7 @@
 # Night-and-Day
-A clock with a sun/moon display.  Currently working without requiring Bootstrap, however, HTML scaffolding is in place for later versions, or if I change my mind.
+A clock that displays a sun or moon depending on the hour.  There are additional effects applied in the early morning and in the late evening.
+
+This version is currently working without requiring Bootstrap, however, HTML scaffolding is in place for later versions, or if I change my mind.
 
 ##### Goals for v2.0 include:
 <ul>
